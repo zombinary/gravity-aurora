@@ -1,0 +1,6 @@
+{ "general": {
+		"reconnectInervalTime": 10000,
+		"reconnectTime": 3000,
+		"rechableCount": 3},
+ "light": {"port":"80"}
+}
