@@ -1,5 +1,5 @@
 
-gravity-aurora V0.0.2
+gravity-aurora V0.0.1
 ============ 
   This Package use the aurora API to communicate with aurora server.
   gravity-aurora handle the communication to the server and makes
