@@ -1,5 +1,5 @@
 
-gravity-aurora V0.0.1
+gravity-aurora V0.0.3
 ============ 
   This Package use the aurora API to communicate with aurora server.
   gravity-aurora handle the communication to the server and makes
@@ -15,7 +15,7 @@ tcp server for atmega328
 getting started
 ---------------------
 
-	* $ npm install
+	* $ npm install gravity-aurora
 	* $ npm test
 
 see Also:
