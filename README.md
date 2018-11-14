@@ -1,5 +1,5 @@
 
-gravity-aurora V0.0.3
+gravity-aurora V0.0.4
 ============ 
   This Package use the aurora API to communicate with aurora server.
   gravity-aurora handle the communication to the server and makes
@@ -7,21 +7,33 @@ gravity-aurora V0.0.3
   Use the module in your controller applicaion on Host side to
   create light effect for ws2812 pixel.
 
-example
+command line example
+---------------------
+```
+node examples/aurora.js -i <aurora_device_ipAddress> -p <aurora_device_port> -c white
+```
+
+
+source example
 ---------------------
 ```sh
 var aurora_server = require('gravity-aurora');
+var AURORA = require('gravity-aurora');
+
 var IP = '10.11.0.101';
 var PORT = 80;
 
-var color = new Buffer ([0xff,0x00,0x00]);
+var red = new Buffer ([0xff,0x00,0x00]);
+var pin = 0;
 
-aurora.setColor(color, pin, function(err){
+var aurora = new AURORA(IP, PORT);
+
+aurora.setColor(red, pin, function(err){
  if(!err){
- 	// do something here
- 	return;
+  // do something here
+  return;
  }else{
- 	console.log('err: ', err);
+  console.log('err: ', err);
  }
 });
 ```

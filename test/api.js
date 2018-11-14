@@ -3,8 +3,12 @@ var assert = require('assert');
 
 var aurora_server = require('./../lib/gravity');
 
+//run '$ node ../aurora_simulate.js' to get a result on localhost
+// or use aurora device
 var IP = '10.11.0.101';
 var PORT = 80;
+//var IP = '127.0.0.1'; 
+//var PORT = 1313;
 var TIMEOUT = 500;
 
 var aurora = new aurora_server(IP,PORT);
