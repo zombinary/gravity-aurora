@@ -1,6 +1,6 @@
 {
   "name": "gravity-aurora",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "communicate with aurora devices to controlle ws2812 pixel",
   "homepage": "https://github.com/zombinary/aurora-graphity",
   "bugs": {
@@ -27,6 +27,7 @@
   "author": "zombinary",
   "license": "MIT",
   "dependencies": {
+    "async": "^3.1.0",
     "colors": "^1.1.2",
     "mocha": "^3.2.0",
     "stack-trace": "0.0.10"
